@@ -41,43 +41,46 @@
 				</div> 
 
 
-				<body>
+				<section>
 					<h2>Notez la formation</h2>
 				
 				<div>
-				  <form action="/action_page.php">
+				  <form action="/action.php" method="post" id="myForm">
 					<label for="fname">First Name</label>
-					<input type="text" id="fname" name="firstname" placeholder="Your name..">
+					<input type="text" id="fname" name="firstname" placeholder="Your name.." required>
 				
 					<label for="lname">Last Name</label>
-					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+					<input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
 				
 					<label for="avis">Votre avis</label>
-					<input type="text" id="avis" name="avis" placeholder="donnez votre avis sur la formation..">
+					<input type="text" id="avis" name="avis" placeholder="donnez votre avis sur la formation.." required>
 				
 					<label for="Note">Note</label>
-					<input type="number" id="Note" name="note" min="1" max="5" placeholder="votre note ..">
+					<input type="number" id="note" name="note" min="1" max="5" placeholder="votre note .." required>
 				
 					<label for="formation">Formation</label>
-					<select id="formation" name="formation">
+					<select id="formation" name="formation" required>
+						<option value="" selected hidden> Select formation</option>
 					  <option value="Frontent">Frontend</option>
 					  <option value="Backend">Backend</option>
 					  <option value="UX-UI">Marketing</option>
 					  <option value="UX-UI">UX-UI</option>
 					</select>
 				  
-					<input type="submit" value="Submit">
+					<input id="bouton"type="submit" value="Submit">
 				  </form>
 				</div>
 				
-				</body>
+			</section>
 				
 
 
 
 			</div>
 		</div>
-
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+		<script src="../public/ajax.js"></script>
+		<script src="../app.js"></script>
 	</body>
 
 </html>
