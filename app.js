@@ -37,7 +37,7 @@ app.get("/home", (req,res)=>{
         if (err) {
             throw err;
         }
-        let indexbox = document.querySelector(".flip-box-front");
+        let indexbox = document.querySelector(".flip-box index");
         let contenaire = document.createElement('div');
         contenaire.innerHTML= result;
         indexbox.appendChild.contenaire;
@@ -52,7 +52,7 @@ app.get("/frontend", (req,res)=>{
         if (err) {
             throw err;
         }
-        let indexbox = document.querySelector(".flip-box-front");
+        let indexbox = document.querySelector(".flip-box frontend");
         let contenaire = document.createElement('div');
         contenaire.innerHTML= result;
         indexbox.appendChild.contenaire;
@@ -67,7 +67,7 @@ app.get("/backend", (req,res)=>{
         if (err) {
             throw err;
         }
-        let indexbox = document.querySelector(".flip-box-front");
+        let indexbox = document.querySelector(".flip-box backend");
         let contenaire = document.createElement('div');
         contenaire.innerHTML= result;
         indexbox.appendChild.contenaire;
@@ -82,7 +82,7 @@ app.get("/marketing", (req,res)=>{
         if (err) {
             throw err;
         }
-        let indexbox = document.querySelector(".flip-box-front");
+        let indexbox = document.querySelector(".flip-box marketing");
         let contenaire = document.createElement('div');
         contenaire.innerHTML= result;
         indexbox.appendChild.contenaire;
@@ -97,7 +97,7 @@ app.get("/ux_ui", (req,res)=>{
         if (err) {
             throw err;
         }
-        let indexbox = document.querySelector(".flip-box-front");
+        let indexbox = document.querySelector(".flip-box uxui");
         let contenaire = document.createElement('div');
         contenaire.innerHTML= result;
         indexbox.appendChild.contenaire;
